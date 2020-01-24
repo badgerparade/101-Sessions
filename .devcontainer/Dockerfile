@@ -21,7 +21,7 @@ ENV GOBIN=$GOPATH/bin
 RUN apt-get update \
 	&& apt-get install -y \
 		curl \
-	&& curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
+	&& curl --silent --location https://deb.nodesource.com/setup_12.x | bash -
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
